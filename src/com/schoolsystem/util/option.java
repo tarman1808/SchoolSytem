@@ -2,7 +2,7 @@ package com.schoolsystem.util;
 
 public enum option {
 
-    Admin, Student;
+    Admin, Student, TSF;
 
     private option(){}
 

@@ -48,4 +48,9 @@ public class LoginController implements Initializable {
 
     }
 
+    @FXML
+    void getLogin(ActionEvent event) {
+
+    }
+
 }
