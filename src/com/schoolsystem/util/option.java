@@ -4,7 +4,7 @@ public enum option {
 
     Admin, Student, TSF;
 
-    private option(){}
+    option(){}
 
     public String value(){
         return name();

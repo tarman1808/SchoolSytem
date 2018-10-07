@@ -29,7 +29,7 @@ public class LoginModel {
 
     }
 
-    public  boolean isLogin(String user,String pass, String opt) throws  Exception{
+    public  boolean isLogin(String user,String pass, String opt) {
 
         PreparedStatement pr = null;
         ResultSet rs = null;
@@ -47,16 +47,14 @@ public class LoginModel {
 
             boolean boll1;
 
-            if(rs.next()){
-                return  true;
-            }
-            return false;
+            return rs.next();
 
         }catch (SQLException e){
             return false;
         }finally {
-            pr.close();
-            rs.close();
+            assert pr != null;
+            assert rs != null;
+
         }
     }
 }
